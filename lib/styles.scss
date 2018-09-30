@@ -1,0 +1,63 @@
+//BOOTSTRAP
+@import "./bootstrap-overrides.scss";
+@import "./bootstrap/bootstrap.scss";
+
+//APP STYLES
+//=======================================================
+
+
+html,body {height: 100%;}
+  
+//Scroll bars
+//=======================================================
+.scroll { overflow: auto; }
+.scroll::-webkit-scrollbar { width: 10px; height: 10px;  }
+
+.scroll::-webkit-scrollbar-track,
+.scroll::-webkit-scrollbar-track-piece    { background: rgba(0,0,0,0.01); }
+.scroll::-webkit-scrollbar-thumb          { background: rgba(0,0,0,0.2); border-radius: 5px; }
+.scroll::-webkit-scrollbar-thumb:vertical { }
+.scroll::-webkit-scrollbar-corner         { background: transparent; }
+
+
+// General styles
+//=======================================================
+h1 { letter-spacing: 1px; }
+
+  //Cards overrides
+  //=======================================================
+.card {
+    box-shadow: 0 0 0 1px rgba(63,63,68,0.05), 0 1px 3px 0 rgba(63,63,68,0.15);
+    border-radius: 3px;
+}
+
+// Flex extension
+//=======================================================
+.flex-fill { min-height: 0;} // for firefox
+
+
+//Customer details responsiveness
+//=======================================================
+.customer-details {  display: flex; }
+
+@media all and (max-width: map-get($grid-breakpoints, "lg") ) {
+    .customer-details { display: none; } //important rule because of Bootstrap has it
+    .detailsVisible .customer-details {  display: flex; position: absolute; top: 0; right: 0; bottom: 0; padding-right: 0;}
+}
+
+.customer-id { position: absolute; right:0; top:0; width:100%; text-align: right; }
+.customer-details { 
+    textarea, pre { font-family: $font-family-sans-serif; white-space: normal; } 
+
+}
+
+
+// Customers - rows
+//=======================================================
+.active { background: #F4F6F8; box-shadow: inset 0 -1px 0 0 #DFE3E8; }
+.customer-item { cursor: pointer; }
+.customer-item:focus{outline:none; }
+
+//Select
+//=======================================================
+.custom-select { -webkit-appearance: none; line-height: 1; padding-top: 0.3rem; }

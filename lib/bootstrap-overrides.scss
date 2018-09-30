@@ -1,0 +1,136 @@
+$enable-shadows:            true;
+
+$border-radius:                 0.125rem;
+$border-radius-lg:              0.2rem;
+$border-radius-sm:              0.1rem;
+
+
+$dropdown-border-radius:        0.25rem;
+$dropdown-border-width:             1px;
+$dropdown-box-shadow: 0 0 1px rgba(57,70,78,.15), 0 20px 55px -8px rgba(57,70,78,.25);
+$navbar-brand-font-size:       1.8rem;
+$navbar-brand-padding-y:       0.2rem;
+
+$btn-box-shadow:              none;
+//$btn-focus-box-shadow:        none;
+$btn-active-box-shadow:       none;
+
+// $font-size-base:                0.9rem; // Assumes the browser default, typically `16px`
+
+$tooltip-border-radius:        0.25rem;
+
+//Paddings
+//====================================================
+$line-height-base:            1.3;
+
+
+$input-btn-padding-y:         .25rem;
+$input-btn-padding-x:         .51rem;
+$input-btn-padding-y-sm:      .125rem;
+$input-btn-padding-x-sm:      .250rem;
+$input-btn-padding-y-lg:      .375rem;
+$input-btn-padding-x-lg:      .750rem;
+
+//HEADINGS
+//====================================================
+//$headings-margin-bottom:      ($spacer / 2);
+//$headings-font-family:        $font-family-alt;
+$headings-font-weight:        300;
+$headings-line-height:        1.2;
+
+
+$success:       #16BC9C;
+$theme-colors: ( "success": $success);
+
+
+
+//Badges - large
+//====================================================
+$badge-pill-padding-lg-x:              .6em;
+$badge-pill-padding-lg-y:              .6em;
+
+
+// Icons
+// ====================================================
+$black-bg: #000;
+$alt-bg: #414F5B;
+
+
+// ============================================================================================================================================================
+@import "./bootstrap/_functions.scss";
+@import "./bootstrap/_variables.scss";
+// ============================================================================================================================================================
+
+
+//COLORS
+//====================================================
+$primary:       #6088e1;
+$secondary:     $gray-300;
+$light:         rgba(255,255,255,0.1);
+$dark: #1C2260;
+$orange:  #DC7006;
+
+$theme-colors: ( "primary": $primary, "secondary":$secondary, "dark":$dark, "orange":$orange, "teal":$teal );
+
+$body-color:                    #212B36;
+$body-bg:                       #F4F6F8;
+
+$nav-link-padding-y-sm : 0.3rem;
+$nav-link-padding-x-sm: 0.5rem;
+
+// Cards
+//====================================================
+$card-border-width:                 1px;
+$card-border-radius:                5px;
+
+
+h1 { letter-spacing: 1px; }
+
+
+// Spacing
+//====================================================
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+// stylelint-disable
+$spacer: 1rem;
+$spacers: ();
+$spacers: map-merge((
+        0: 0,
+        1: ($spacer * .25),
+        2: ($spacer * .5),
+        3: $spacer,
+        4: ($spacer * 1.5),
+        5: ($spacer * 2),
+        6: ($spacer * 2.5),
+        7: ($spacer * 3)
+), $spacers);
+
+
+
+//Breakpoints
+//====================================================
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1600px,
+        xxxl: 1800px
+);
+
+// Grid containers
+//====================================================
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1500px,
+        //xxxl: 1700px
+);
