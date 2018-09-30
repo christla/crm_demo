@@ -9711,6 +9711,7 @@ h1 {
 
 .custom-select {
   -webkit-appearance: none;
+  -moz-appearance: none;
   line-height: 1;
   padding-top: 0.3rem; }
 
