@@ -1,7 +1,7 @@
 # Customer view - demo
  Working demo at : http://ix.pixel88.co.nz
 
-The whole app is built with Vue.js and Bootstrap and SCSS, using browser's localstorage. You can just download, unzip and run index.html, or serve with any web server or see it working at http://ix.pixel88.co.nz
+The whole app is built with Vue.js and Bootstrap and SCSS, using browser's localstorage. (Production version would obviously need to use server side storage, and the app would use API to retrieve and save the data, as well as filter, pagination etc). You can just download, unzip and run index.html, or serve with any web server or see it working at http://ix.pixel88.co.nz
 
 Features:
 * Search for customer title
