@@ -3,6 +3,8 @@
 
 The whole app is built with Vue.js and Bootstrap, using browser's localstorage. You can just download, unzip and run index.html, or download and run with  file or see it working at http://ix.pixel88.co.nz
 
+BTW: Content is from Start Trek ipsum
+
 Features:
 * Search for customer title
 * Sort by id, title, status, date (toggling not implemented)
