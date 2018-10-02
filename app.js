@@ -49,7 +49,7 @@ new Vue({
 
     setActive : function(item){
       this.activeItem = item ? this.items.filter( itm => itm.id == item.id )[0] : null;
-      this.tempStatus = this.activeItem.status;
+      this.tempStatus = this.activeItem ? this.activeItem.status : null;
       this.disableEditing();//close any edited
       
     },
